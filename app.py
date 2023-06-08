@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-#from google.colab import drive
-#drive.mount('/content/drive')
-
-# Installing surprise library
-#!pip install surprise
-
 # Importing the necessary libraries and overview of the dataset
 
 # Used to ignore the warning given as output of the code
@@ -23,32 +15,17 @@ import matplotlib.pyplot as plt
 # Slightly advanced library for data visualization            
 import seaborn as sns                           
 
-# A dictionary output that does not raise a key error
-from collections import defaultdict             
-
-# A performance metrics in surprise
-from surprise import accuracy
-
 # Class is used to parse a file containing ratings, data should be in structure - user ; item ; rating
 from surprise.reader import Reader
 
 # Class for loading datasets
 from surprise.dataset import Dataset
 
-# For model tuning model hyper-parameters
-from surprise.model_selection import GridSearchCV
-
 # For splitting the rating data in train and test dataset
 from surprise.model_selection import train_test_split
 
 # For implementing similarity based recommendation system
 from surprise.prediction_algorithms.knns import KNNBasic
-
-# For implementing matrix factorization based recommendation system
-from surprise.prediction_algorithms.matrix_factorization import SVD
-
-# For implementing cross validation
-from surprise.model_selection import KFold
 
 # Import the SVD class
 from surprise.prediction_algorithms.matrix_factorization import SVD
